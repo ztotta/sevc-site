@@ -3,16 +3,16 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 class Index extends Component {
-  render() {
+	render() {
     return (
 			<div>
-				<Header />
-				<div className='App-main'>
-					<div className='App-page-container'>
-						{this.props.children}
+					<Header />
+					<div className='App-main'>
+						<div className='App-page-container'>
+							{this.props.children}
+						</div>
 					</div>
-				</div>
-				<Footer />
+					<Footer />
 			</div>
     );
   }

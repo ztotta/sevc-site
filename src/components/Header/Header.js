@@ -7,7 +7,6 @@ class Header extends Component {
     return (
 			<div className="App-header">
 				<Banner />
-				<Navbar />
 			</div>
     );
   }
