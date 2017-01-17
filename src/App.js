@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
+import { Router, Route, hashHistory } from 'react-router';
 import './App.css';
-import Header from './components/header'
-import Main from './components/main'
-import Footer from './components/footer'
+import Index from './containers/index';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-				<Header />
-        <Main />
-				<Footer />
-      </div>
+			<Router history={hashHistory}>
+				<Route path='/' component={Index}>
+				</Route>
+			</Router>
     );
   }
 }
