@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Router, Route, hashHistory } from 'react-router';
-import Header from '../components/header'
-import Main from '../components/main'
-import Footer from '../components/footer'
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 class Index extends Component {
   render() {
     return (
 			<div>
 				<Header />
-				<Main />
+				<div className='App-main'>
+					{this.props.children}
+				</div>
 				<Footer />
 			</div>
     );
