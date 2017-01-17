@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import HomeText from './Home-Text';
 
 class Home extends Component {
   render() {
     return (
-			<h1>HOME</h1>
+			<HomeText />
     );
   }
 }

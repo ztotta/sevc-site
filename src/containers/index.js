@@ -8,7 +8,9 @@ class Index extends Component {
 			<div>
 				<Header />
 				<div className='App-main'>
-					{this.props.children}
+					<div className='App-page-container'>
+						{this.props.children}
+					</div>
 				</div>
 				<Footer />
 			</div>
