@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import './App.css';
 import Index from './containers/Index';
+
 import Home from './views/Home/Home';
 import AboutVipassana from './views/About-Vipassana/About-Vipassana';
 import AboutTheCenter from './views/About-the-Center/About-the-Center';

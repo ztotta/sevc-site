@@ -5,8 +5,13 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 class Index extends Component {
+
+	onCollapse() {
+		return false
+	}
 	
 	render() {
+	
 		let items = [
 			<SidebarItem><Link to='home'>Home</Link></SidebarItem>,
 			<SidebarItem><Link to='/about-vipassana' className='nav-tags'>About Vipassana</Link></SidebarItem>,
@@ -18,7 +23,10 @@ class Index extends Component {
 		
     return (
 			<div>
-				<Sidebar content={items}>
+				<Sidebar content={items} 
+						background={'white'} 
+						breakPoint={980}
+				>
 					<Header />
 					<div className='App-main'>
 						<div className='App-page-container'>
