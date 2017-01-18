@@ -113,6 +113,13 @@ h1 {
 	cursor: pointer;
 }
 
+.page-img {
+	max-width: 100%;
+  height: auto;
+	margin: 0 auto;
+	top: 0px;
+}
+
 .side-nav-active {
 	display: inherit;
 	height: 200px;
