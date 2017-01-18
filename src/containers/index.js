@@ -14,11 +14,11 @@ class Index extends Component {
 	
 		let items = [
 			<SidebarItem><Link to='home'>Home</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana' className='nav-tags'>About Vipassana</Link></SidebarItem>,
-			<SidebarItem><Link to='/course-information' className='nav-tags'>Course Information</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-the-center' className='nav-tags'>About the Center</Link></SidebarItem>,
-			<SidebarItem><Link to='/home' className='nav-tags'>Old Student Website</Link></SidebarItem>,
-			<SidebarItem><Link to='/contact-us' className='nav-tags nav-tags-right'>Contact Us</Link></SidebarItem>
+			<SidebarItem><Link to='/about-vipassana'>About Vipassana</Link></SidebarItem>,
+			<SidebarItem><Link to='/course-information'>Course Information</Link></SidebarItem>,
+			<SidebarItem><Link to='/about-the-center'>About the Center</Link></SidebarItem>,
+			<SidebarItem><Link to='/home'>Old Student Website</Link></SidebarItem>,
+			<SidebarItem><Link to='/contact-us'>Contact Us</Link></SidebarItem>
 		];
 		
     return (
@@ -26,6 +26,9 @@ class Index extends Component {
 				<Sidebar content={items} 
 						background={'white'} 
 						breakPoint={980}
+						toggleIconColor={'#045fb4'}
+						activeHightlight={'#045fb4'}
+						width={200}
 				>
 					<Header />
 					<div className='App-main'>
