@@ -10,11 +10,9 @@ const styles = {
   cell: {
     boxSizing: "border-box",
     color: "#045fb4",
-		textAlign: 'center',
     marginBottom: "1rem",
     padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4"
+    height: "auto"
   }, 
 	cellHeader: {
     boxSizing: "border-box",
@@ -109,6 +107,13 @@ class WhatIsVipassana extends Component {
 
 							<br/><br/>All sincere people are welcome to join a Vipassana course to see for themselves how the technique works and to measure the benefits. All those who try it will find Vipassana to be an invaluable tool with which to achieve and share real happiness with others.
 						</p>
+					</Cell>
+					<Cell 
+						style={styles.cellHeader}
+						verticalAlign="top"
+						width="1"
+					>
+						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
 					</Cell>
 				</Grid>
 			</StyleRoot>

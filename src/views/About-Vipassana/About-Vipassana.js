@@ -45,7 +45,7 @@ class AboutVipassana extends Component {
 						width="1/2"
 						smallWidth="1"
 					>
-						<Link style={styles.link}>Art of Living</Link>
+						<Link to='art-of-living' style={styles.link}>Art of Living</Link>
 					</Cell>
 					<Cell
 						style={styles.cell}
@@ -53,7 +53,7 @@ class AboutVipassana extends Component {
 						width="1/2"
 						smallWidth="1"
 					>
-						<Link style={styles.link}>Vipassana Video</Link>
+						<a href='http://video.server.dhamma.org/video/intro/vintro.htm' target="_blank" style={styles.link}>Vipassana Video</a>
 					</Cell>
 					<Cell
 						style={styles.cell}
@@ -61,7 +61,7 @@ class AboutVipassana extends Component {
 						width="1/2"
 						smallWidth="1"
 					>
-						<Link style={styles.link}>About S.N. Goenka</Link>
+						<Link to='about-sn-goenka' style={styles.link}>About S.N. Goenka</Link>
 					</Cell>
 					<Cell
 						style={styles.cell}
@@ -69,7 +69,7 @@ class AboutVipassana extends Component {
 						width="1/2"
 						smallWidth="1"
 					>
-						<Link style={styles.link}>FAQs</Link>
+						<Link to='FAQ' style={styles.link}>FAQs</Link>
 					</Cell>
 					<Cell
 						style={styles.cell}
@@ -77,7 +77,7 @@ class AboutVipassana extends Component {
 						width="1/2"
 						smallWidth="1"
 					>
-						<Link style={styles.link}>International Website</Link>
+						<a href='https://www.dhamma.org' target='_blank' style={styles.link}>International Website</a>
 					</Cell>
 					<Cell
 						style={styles.cell}
