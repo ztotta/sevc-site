@@ -11,7 +11,6 @@ const styles = {
   cell: {
     boxSizing: "border-box",
     color: "#fff",
-    background: "#ff4136",
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"

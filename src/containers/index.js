@@ -13,18 +13,14 @@ class Index extends Component {
 	render() {
 	
 		let items = [
-			<SidebarItem><Link to='home'>HOME</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>ABOUT VIPASSANA</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>what is vipassana?</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>art of living</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>vipassana video</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>about S.N. Goenka</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>FAQs</Link></SidebarItem>,
-			<SidebarItem><Link to='/about-vipassana'>international website</Link></SidebarItem>,
+			<SidebarItem><Link to='home'>Home</Link></SidebarItem>,
+			<SidebarItem><Link to='/about-vipassana'>About Vipassana</Link></SidebarItem>,
 			<SidebarItem><Link to='/course-information'>Course Information</Link></SidebarItem>,
 			<SidebarItem><Link to='/about-the-center'>About the Center</Link></SidebarItem>,
 			<SidebarItem><Link to='/home'>Old Student Website</Link></SidebarItem>,
-			<SidebarItem><Link to='/contact-us'>Contact Us</Link></SidebarItem>
+			<SidebarItem><Link to='/contact-us'>Contact Us</Link></SidebarItem>,
+			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/wheel.gif" /></Link></SidebarItem>,
+			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/bodhi.gif" /></Link></SidebarItem>
 		];
 		
     return (
