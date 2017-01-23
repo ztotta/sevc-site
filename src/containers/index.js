@@ -19,8 +19,8 @@ class Index extends Component {
 			<SidebarItem><Link to='/about-the-center'>About the Center</Link></SidebarItem>,
 			<SidebarItem><a href='http://www.patapa.dhamma.org/old_student_login.shtml'>Old Student Website</a></SidebarItem>,
 			<SidebarItem><Link to='/contact-us'>Contact Us</Link></SidebarItem>,
-			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/wheel.gif" /></Link></SidebarItem>,
-			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/bodhi.gif" /></Link></SidebarItem>
+			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/wheel.gif" alt="wheel"/></Link></SidebarItem>,
+			<SidebarItem><Link to='/'><img src="http://www.patapa.dhamma.org/image/bodhi.gif" alt="bodhi"/></Link></SidebarItem>
 		];
 		
     return (

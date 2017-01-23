@@ -3,7 +3,7 @@ a {
 }
 
 .App {
-
+	
 }
 
 .App-logo {
@@ -26,6 +26,7 @@ a {
   background-color: #ffffbe;
   height: 175px;
 	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .App-main {
@@ -57,8 +58,8 @@ a {
 	color: #045fb4;
 }
 
-h1 {
-	
+h3 {
+	font-family: 'Roboto', sans-serif;
 }
 
 .name {
@@ -111,6 +112,10 @@ h1 {
 
 .nav-hamburger:hover {
 	cursor: pointer;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
 }
 
 .page-img {
