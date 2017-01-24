@@ -5,7 +5,7 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
-import LinkOrAnchor from './Sub-Menu/Link-Or-Anchor';
+import LinkOrAnchor from '../Sub-Menu/Link-Or-Anchor';
 
 const styles = {
 	cellHeader: {

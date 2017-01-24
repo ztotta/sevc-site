@@ -6,9 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
-import PageSectionHeader from '../../components/Page-Section-Header';
-import HomeButton from '../../components/Home-Button';
-import PageSection from '../../components/Page-Section';
+import PageSectionHeader from '../../components/Pages/Page-Section-Header';
+import PageSection from '../../components/Pages/Page-Section';
+import HomeButton from '../../components/Pages/Home-Button';
 
 class HistoryOfSEVC extends Component {
   render() {
