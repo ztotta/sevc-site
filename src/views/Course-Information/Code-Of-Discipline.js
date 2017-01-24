@@ -22,7 +22,8 @@ const styles = {
     padding: "1rem",
     height: "auto",
 		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe"
+		backgroundColor: "#ffffbe",
+		borderRadius: '5px'
   },
 	h3: {
 		margin: "auto"

@@ -7,7 +7,7 @@ const items = [
 		text: 'History of the Southeast Vipassana Center'
 	},
 	{
-		link: 'photos-of-the-center',
+		link: 'photos-of-sevc',
 		text: 'Photographs of the Center'
 	}
 ]

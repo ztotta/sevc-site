@@ -3,17 +3,18 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import './App.css';
 import Index from './containers/Index';
 
-import Home from './views/Home/Home';
-import AboutVipassana from './views/About-Vipassana/About-Vipassana';
-import WhatIsVipassana from './views/About-Vipassana/What-Is-Vipassana';
-import ArtOfLiving from './views/About-Vipassana/Art-Of-Living';
 import AboutSNGoenka from './views/About-Vipassana/About-SN-Goenka';
-import FAQ from './views/About-Vipassana/FAQ';
 import AboutTheCenter from './views/About-the-Center/About-the-Center';
-import HistoryOfSEVC from './views/About-the-Center/History-Of-SEVC';
-import ContactUs from './views/Contact-Us/Contact-Us';
-import CourseInformation from './views/Course-Information/Course-Information';
+import AboutVipassana from './views/About-Vipassana/About-Vipassana';
+import ArtOfLiving from './views/About-Vipassana/Art-Of-Living';
 import CodeOfDiscipline from './views/Course-Information/Code-Of-Discipline';
+import CourseInformation from './views/Course-Information/Course-Information';
+import ContactUs from './views/Contact-Us/Contact-Us';
+import FAQ from './views/About-Vipassana/FAQ';
+import HistoryOfSEVC from './views/About-the-Center/History-Of-SEVC';
+import Home from './views/Home/Home';
+import PhotosOfSEVC from './views/About-the-Center/Photos-Of-SEVC';
+import WhatIsVipassana from './views/About-Vipassana/What-Is-Vipassana';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
 					{/* ABOUT THE CENTER ROUTES */}
 					<Route path='about-the-center' component={AboutTheCenter}></Route>
 					<Route path='history-of-sevc' component={HistoryOfSEVC}></Route>
+					<Route path='photos-of-sevc' component={PhotosOfSEVC}></Route>
 					{/* ABOUT VIPASSANA ROUTES */}
 					<Route path='about-vipassana' component={AboutVipassana}></Route>
 					<Route path='what-is-vipassana' component={WhatIsVipassana}></Route>

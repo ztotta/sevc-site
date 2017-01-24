@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 var Radium = require('radium');
 var RadiumGrid = require('radium-grid');
-import LinkOrAnchor from './Link-Or-Anchor';
-
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
+
+import LinkOrAnchor from './Link-Or-Anchor';
 
 const styles = {
   cell: {
@@ -17,7 +17,7 @@ const styles = {
     height: "auto",
 		border: "1px solid #045fb4",
 		backgroundColor: "#ffffbe",
-		borderRadius: '10px'
+		borderRadius: '5px'
   },
 	link: {
 		margin: "0 auto",
