@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 var Radium = require('radium');
 var RadiumGrid = require('radium-grid');
-
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
+
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
 
 const styles = {
   cell: {
@@ -13,21 +15,7 @@ const styles = {
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
-  },
-	h3: {
-		margin: "auto"
-	}
+  }
 }
 
 class HistoryOfSEVC extends Component {
@@ -35,13 +23,7 @@ class HistoryOfSEVC extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>History of the Southeast Vipassana Center</h3>
-					</Cell>
+					<PageSectionHeader title={'History of the Southeast Vipassana Center'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -69,13 +51,7 @@ class HistoryOfSEVC extends Component {
 							<br/><br/>The goal is to eventually have individual rooms with individual bath facilities for students, as well as housing for course managers and servers. The entire cluster will be tucked away in a forested area on the highest elevation on the property.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );

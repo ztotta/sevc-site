@@ -6,6 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
+
 const styles = {
   cell: {
     boxSizing: "border-box",
@@ -13,21 +16,7 @@ const styles = {
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
-  },
-	h3: {
-		margin: "auto"
-	}
+  }
 }
 
 class ArtOfLiving extends Component {
@@ -35,13 +24,7 @@ class ArtOfLiving extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>The Art of Living: Vipassana Meditation</h3>
-					</Cell>
+					<PageSectionHeader title={'The Art of Living: Vipassana Meditation'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -117,13 +100,7 @@ class ArtOfLiving extends Component {
 							The above text is based upon a talk given by Mr. S.N. Goenka in Berne, Switzerland.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );

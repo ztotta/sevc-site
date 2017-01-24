@@ -6,6 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
+
 const styles = {
   cell: {
     boxSizing: "border-box",
@@ -13,21 +16,7 @@ const styles = {
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
-  },
-	h3: {
-		margin: "auto"
-	}
+  }
 }
 
 class WhatIsVipassana extends Component {
@@ -35,13 +24,7 @@ class WhatIsVipassana extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>The Technique</h3>
-					</Cell>
+					<PageSectionHeader title={'The Technique'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -57,13 +40,7 @@ class WhatIsVipassana extends Component {
 							<br/><br/>The scientific laws that operate one's thoughts, feelings, judgements and sensations become clear. Through direct experience, the nature of how one grows or regresses, how one produces suffering or frees oneself from suffering is understood. Life becomes characterized by increased awareness, non-delusion, self-control and peace.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>The Tradition</h3>
-					</Cell>
+					<PageSectionHeader title={'The Tradition'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -73,13 +50,7 @@ class WhatIsVipassana extends Component {
 							Since the time of Buddha, Vipassana has been handed down, to the present day, by an unbroken chain of teachers. Although Indian by descent, the current teacher in this chain, Mr. S.N. Goenka, was born and raised in Burma (Myanmar). While living there he had the good fortune to learn Vipassana from his teacher, Sayagyi U Ba Khin who was at the time a high Government official. After receiving training from his teacher for fourteen years, Mr. Goenka settled in India and began teaching Vipassana in 1969. Since then he has taught tens of thousands of people of all races and all religions in both the East and West. In 1982 he began to appoint assistant teachers to help him meet the growing demand for Vipassana courses.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>The Courses</h3>
-					</Cell>
+					<PageSectionHeader title={'The Courses'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -109,13 +80,7 @@ class WhatIsVipassana extends Component {
 							<br/><br/>All sincere people are welcome to join a Vipassana course to see for themselves how the technique works and to measure the benefits. All those who try it will find Vipassana to be an invaluable tool with which to achieve and share real happiness with others.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );

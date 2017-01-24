@@ -6,6 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
+
 const styles = {
   cell: {
     boxSizing: "border-box",
@@ -13,17 +16,6 @@ const styles = {
     marginBottom: "0rem",
     padding: " 0 1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
   },
 	h3: {
 		margin: "auto"
@@ -35,13 +27,7 @@ class FAQ extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Questions & Answers About the Technique of Vipassana Meditation</h3>
-					</Cell>
+					<PageSectionHeader title={'Questions & Answers About the Technique of Vipassana Meditation'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -106,13 +92,7 @@ class FAQ extends Component {
 							Certainly. Chairs are provided for those unable to sit comfortably on the floor because of age or a physical problem.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );

@@ -6,6 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
+
 const styles = {
   cell: {
     boxSizing: "border-box",
@@ -13,21 +16,7 @@ const styles = {
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
-  },
-	h3: {
-		margin: "auto"
-	}
+  }
 }
 
 class ContactUs extends Component {
@@ -35,13 +24,7 @@ class ContactUs extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Information</h3>
-					</Cell>
+					<PageSectionHeader title={'Information'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -51,13 +34,7 @@ class ContactUs extends Component {
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, explicabo ab esse aspernatur minus provident architecto atque quisquam molestiae vitae tempore officiis voluptatum corrupti, asperiores. Aspernatur aut quo ipsa nobis.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Registration</h3>
-					</Cell>
+					<PageSectionHeader title={'Registration'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -70,13 +47,7 @@ class ContactUs extends Component {
 							Dhamma Patāpa is owned and operated by South East Vipassana Association, Inc., a 501(c)3 non-profit organization
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Mailing Address</h3>
-					</Cell>
+					<PageSectionHeader title={'Mailing Address'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -97,13 +68,7 @@ class ContactUs extends Component {
 							<br/>Jesup, GA 31546
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );

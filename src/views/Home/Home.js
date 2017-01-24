@@ -16,8 +16,7 @@ const styles = {
     height: "auto"
   }
 }
-
-
+	
 class Home extends Component {
   render() {
     return (

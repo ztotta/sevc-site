@@ -6,6 +6,9 @@ var RadiumGrid = require('radium-grid');
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
+import PageSectionHeader from '../../components/Page-Section-Header';
+import HomeButton from '../../components/Home-Button';
+
 const styles = {
   cell: {
     boxSizing: "border-box",
@@ -13,21 +16,7 @@ const styles = {
     marginBottom: "1rem",
     padding: "1rem",
     height: "auto"
-  }, 
-	cellHeader: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-		textAlign: 'center',
-    marginBottom: "0.2rem",
-    padding: "1rem",
-    height: "auto",
-		border: "1px solid #045fb4",
-		backgroundColor: "#ffffbe",
-		borderRadius: '5px'
   },
-	h3: {
-		margin: "auto"
-	},
 	img: {
 		maxWidth: "100%",
 		maxHeight: "480px",
@@ -42,13 +31,7 @@ class AboutSNGoenka extends Component {
     return (
 			<StyleRoot>
 				<Grid>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Mr. S.N. Goenka</h3>
-					</Cell>
+					<PageSectionHeader title={'Mr. S.N. Goenka'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -56,13 +39,7 @@ class AboutSNGoenka extends Component {
 					>
 						<img style={styles.img} src='http://www.dhamma.org/images/sng/sng.gif' alt='goenka' />
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>Background</h3>
-					</Cell>
+					<PageSectionHeader title={'Background'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -78,13 +55,7 @@ class AboutSNGoenka extends Component {
 							The technique which S.N.Goenka teaches represents a tradition that is traced back to the Buddha. The Buddha never taught a sectarian religion; he taught Dhamma - the way to liberation - which is universal. In the same tradition, Mr. Goenka's approach is totally non-sectarian. For this reason, his teaching has a profound appeal to people of all backgrounds, of every religion and no religion, and from every part of the world.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>U.N. Peace Summit</h3>
-					</Cell>
+					<PageSectionHeader title={'U.N. Peace Summit'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -139,13 +110,7 @@ class AboutSNGoenka extends Component {
 							"The goal of the International Advisory Council of Religious and Spiritual Leaders is to enhance and strengthen the work of the United Nations," said Bawa Jain, the Secretary-General of the World Peace Summit. "It is our earnest hope that in times of conflict, the world's great religious and spiritual leaders can be parachuted into these hotspot to seek non-violent resolutions to the conflicts."
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}>U.N. Address</h3>
-					</Cell>
+					<PageSectionHeader title={'U.N. Address'} />
 					<Cell 
 						style={styles.cell}
 						verticalAlign="top"
@@ -206,13 +171,7 @@ class AboutSNGoenka extends Component {
 							<br/><br/>May peace and harmony prevail.
 						</p>
 					</Cell>
-					<Cell 
-						style={styles.cellHeader}
-						verticalAlign="top"
-						width="1"
-					>
-						<h3 style={styles.h3}><Link to='/'>Home</Link></h3>
-					</Cell>
+					<HomeButton />
 				</Grid>
 			</StyleRoot>
     );
