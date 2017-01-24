@@ -7,6 +7,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -32,19 +33,11 @@ class AboutSNGoenka extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'Mr. S.N. Goenka'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<img style={styles.img} src='http://www.dhamma.org/images/sng/sng.gif' alt='goenka' />
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'Background'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Mr. Goenka is a householder teacher of Vipassana meditation in the tradition of the late Sayagyi U Ba Khin of Burma (Myanmar).
 
@@ -54,20 +47,12 @@ class AboutSNGoenka extends Component {
 
 							The technique which S.N.Goenka teaches represents a tradition that is traced back to the Buddha. The Buddha never taught a sectarian religion; he taught Dhamma - the way to liberation - which is universal. In the same tradition, Mr. Goenka's approach is totally non-sectarian. For this reason, his teaching has a profound appeal to people of all backgrounds, of every religion and no religion, and from every part of the world.
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'U.N. Peace Summit'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<img style={styles.img} src="http://www.dhamma.org/images/sng/sng-un-speaking.jpg" alt="un-peace-summit"/>
-					</Cell>
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					</PageSection>
+					<PageSection>
 						<p>
 							In the Summer of 2000, Mr. Goenka, the principal teacher of Vipassana Meditation visited the United States and spoke, along with other world spiritual leaders, at the "Millennium World Peace Summit" at the United Nations World Headquarters in New York.
 
@@ -109,13 +94,9 @@ class AboutSNGoenka extends Component {
 
 							"The goal of the International Advisory Council of Religious and Spiritual Leaders is to enhance and strengthen the work of the United Nations," said Bawa Jain, the Secretary-General of the World Peace Summit. "It is our earnest hope that in times of conflict, the world's great religious and spiritual leaders can be parachuted into these hotspot to seek non-violent resolutions to the conflicts."
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'U.N. Address'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							<h4 style={{textAlign: "center"}}>Universal Spirituality for Peace By S.N. Goenka</h4>
 
@@ -170,7 +151,7 @@ class AboutSNGoenka extends Component {
 
 							<br/><br/>May peace and harmony prevail.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

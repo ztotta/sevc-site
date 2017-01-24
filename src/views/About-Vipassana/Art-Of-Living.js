@@ -7,6 +7,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -25,11 +26,7 @@ class ArtOfLiving extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'The Art of Living: Vipassana Meditation'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Everyone seeks peace and harmony, because this is what we lack in our lives. From time to time we all experience agitation, irritation, disharmony. And when we suffer from these miseries, we don't keep them to ourselves; we often distribute them to others as well. Unhappiness permeates the atmosphere around someone who is miserable, and those who come in contact with such a person also become affected. Certainly this is not a skillful way to live.
 
@@ -99,7 +96,7 @@ class ArtOfLiving extends Component {
 
 							The above text is based upon a talk given by Mr. S.N. Goenka in Berne, Switzerland.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

@@ -7,6 +7,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -25,11 +26,7 @@ class WhatIsVipassana extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'The Technique'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation. It was rediscovered by Gotama Buddha more than 2500 years ago and was taught by him as a universal remedy for universal ills, i.e., an Art Of Living.
 
@@ -39,23 +36,15 @@ class WhatIsVipassana extends Component {
 
 							<br/><br/>The scientific laws that operate one's thoughts, feelings, judgements and sensations become clear. Through direct experience, the nature of how one grows or regresses, how one produces suffering or frees oneself from suffering is understood. Life becomes characterized by increased awareness, non-delusion, self-control and peace.
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'The Tradition'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Since the time of Buddha, Vipassana has been handed down, to the present day, by an unbroken chain of teachers. Although Indian by descent, the current teacher in this chain, Mr. S.N. Goenka, was born and raised in Burma (Myanmar). While living there he had the good fortune to learn Vipassana from his teacher, Sayagyi U Ba Khin who was at the time a high Government official. After receiving training from his teacher for fourteen years, Mr. Goenka settled in India and began teaching Vipassana in 1969. Since then he has taught tens of thousands of people of all races and all religions in both the East and West. In 1982 he began to appoint assistant teachers to help him meet the growing demand for Vipassana courses.
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'The Courses'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							The technique is taught at ten-day residential courses during which participants follow a prescribed Code of Discipline, learn the basics of the method, and practice sufficiently to experience its beneficial results.
 
@@ -79,7 +68,7 @@ class WhatIsVipassana extends Component {
 
 							<br/><br/>All sincere people are welcome to join a Vipassana course to see for themselves how the technique works and to measure the benefits. All those who try it will find Vipassana to be an invaluable tool with which to achieve and share real happiness with others.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

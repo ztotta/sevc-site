@@ -2,21 +2,13 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 var Radium = require('radium');
 var RadiumGrid = require('radium-grid');
+
 const { StyleRoot } = Radium; 
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
 import HomeButton from '../../components/Home-Button';
-
-const styles = {
-  cell: {
-    boxSizing: "border-box",
-    color: "#045fb4",
-    marginBottom: "1rem",
-    padding: "1rem",
-    height: "auto"
-  }
-}
+import PageSection from '../../components/Page-Section';
 
 class HistoryOfSEVC extends Component {
   render() {
@@ -24,11 +16,7 @@ class HistoryOfSEVC extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'History of the Southeast Vipassana Center'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							The Southeast Vipassana Center, Dhamma Patāpa - "The Majesty of Dhamma” is one of more than 100 Centers worldwide and the ninth Center in North America offering courses in Vipassana Meditation taught by S.N. Goenka and his Assistant Teachers in the tradition of Sayagyi U Ba Khin.
 
@@ -50,7 +38,7 @@ class HistoryOfSEVC extends Component {
 
 							<br/><br/>The goal is to eventually have individual rooms with individual bath facilities for students, as well as housing for course managers and servers. The entire cluster will be tucked away in a forested area on the highest elevation on the property.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

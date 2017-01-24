@@ -6,6 +6,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -24,15 +25,11 @@ class PhotosOfSEVC extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'Photos of the Center'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum expedita minima, iste, exercitationem soluta magnam pariatur. Voluptatum tempora rerum, perspiciatis veritatis repudiandae amet autem alias fuga esse, labore magni impedit.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

@@ -7,6 +7,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -25,11 +26,7 @@ class CodeOfDiscipline extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'Introduction to the Technique'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Vipassana is one of India's most ancient meditation techniques. Long lost to humanity, it was rediscovered by Gotama the Buddha more than 2500 years ago. The word Vipassana means seeing things as they really are. It is the process of self- purification by self-observation. One begins by observing the natural breath to concentrate the mind. With a sharpened awareness one proceeds to observe the changing nature of body and mind and experiences the universal truths of impermanence, suffering and egolessness. This truth-realization by direct experience is the process of purification. The entire path (Dhamma) is a universal remedy for universal problems and has nothing to do with any organized religion or sectarianism. For this reason, it can be freely practiced by everyone, at any time, in any place, without conflict due to race, community or religion, and will prove equally beneficial to one and all.
 
@@ -51,13 +48,9 @@ class CodeOfDiscipline extends Component {
 							<br/><br/>Although Vipassana was developed as a technique by the Buddha, its practice is not limited to Buddhists. There is absolutely no question of conversion. The technique works on the simple basis that all human beings share the same problems and a technique which can eradicate these problems will have a universal application. People from many religious denominations have experienced the benefits of Vipassana meditation, and have found no conflict with their profession of faith.
 							
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'Meditation and Self-Discipline'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							The process of self-purification by introspection is certainly never easy--students have to work very hard at it. By their own efforts students arrive at their own realizations; no one else can do this for them. Therefore, the meditation will suit only those willing to work seriously and observe the discipline, which is there for the benefit and protection of the meditators and is an integral part of the meditation practice.
 
@@ -65,7 +58,7 @@ class CodeOfDiscipline extends Component {
 
 							<br/><br/><b>A student will have to stay for the entire period of the course. The other rules should also be carefully read and considered. Only those who feel that they can honestly and scrupulously follow the discipline should apply for admission.</b> Those not prepared to make a determined effort will waste their time and, moreover, will disturb others who wish to work seriously. A prospective student should also understand that it would be both disadvantageous and inadvisable to leave without finishing the course upon finding the discipline too difficult. Likewise, it would be most unfortunate if, in spite of repeated reminders, a student does not follow the rules and has to be asked to leave.
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>

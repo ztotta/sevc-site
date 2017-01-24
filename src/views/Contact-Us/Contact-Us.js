@@ -7,6 +7,7 @@ const { StyleRoot } = Radium;
 const { Grid, Cell } = RadiumGrid;
 
 import PageSectionHeader from '../../components/Page-Section-Header';
+import PageSection from '../../components/Page-Section';
 import HomeButton from '../../components/Home-Button';
 
 const styles = {
@@ -25,34 +26,22 @@ class ContactUs extends Component {
 			<StyleRoot>
 				<Grid>
 					<PageSectionHeader title={'Information'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, explicabo ab esse aspernatur minus provident architecto atque quisquam molestiae vitae tempore officiis voluptatum corrupti, asperiores. Aspernatur aut quo ipsa nobis.
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'Registration'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							Adult Course E-Mail: <a href="">registration@patapa.dhamma.org</a>
 							<br/>Children's/Teen's Course E-Mail: <a href="">childrens-course@patapa.dhamma.org</a>
 							<br/><br/>
 							Dhamma Patāpa is owned and operated by South East Vipassana Association, Inc., a 501(c)3 non-profit organization
 						</p>
-					</Cell>
+					</PageSection>
 					<PageSectionHeader title={'Mailing Address'} />
-					<Cell 
-						style={styles.cell}
-						verticalAlign="top"
-						width="1"
-					>
+					<PageSection>
 						<p>
 							<i>For registration (confidential questionnaires), donations and financial matters:</i>
 							<br/><br/> Southeast Vipassana Association
@@ -67,7 +56,7 @@ class ContactUs extends Component {
 							<br/>476 Rogers Break 
 							<br/>Jesup, GA 31546
 						</p>
-					</Cell>
+					</PageSection>
 					<HomeButton />
 				</Grid>
 			</StyleRoot>
